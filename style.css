@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background-image:url(src/background.jpg);
+	height: 80vh;
+	background-size: cover;
+	background-position: center;
+}
+ul {
+  margin: ;
+  padding: 0;
+  text-align: center;
+  list-style: none outside none;
+}
+
+ul li {
+  margin: 0 10px; 
+  display: inline; 
+}
+
+ul li a {
+
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111;
+}
+.nav {
+	margin-top: 50px;
+}
+
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered1 {
+  position: absolute;
+  top: 55%;
+  left: 44%;
+  
+}
+.background{
+	width: 100%;
+}
+.selfie{
+	padding-left:20% ;
+	width: 300px;
+	height: 450px;
+}
+.container2{
+	width: 100vw;
+	height: 450px; 
+	background-color: gray;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  height: 300px;
+  position: relative;
+  margin-right: 25px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width: 400px;
+  height: 400px;
+  background-color: black;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.box{
+	width: 49vw;
+	
+	background-color: gray;
+	display: inline-block;
+	vertical-align: top;
+}
