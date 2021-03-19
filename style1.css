@@ -1,0 +1,205 @@
+.header{
+    background-image:url(src/background.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+  }
+  .header nav{
+    text-align: center;
+    width:80%;
+    font-size: 0;
+    position: relative;
+    margin: auto;
+    background-color: white;
+  }
+  .header nav a{
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 20px 60px;
+    color: black;
+  }
+  .header .name{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  /* .header .name h1{
+    color: rgb(25, 78, 9);
+  }
+  .header h3{
+    font-size: 14px;
+  } */
+  .introduction{
+    
+    width:100%;
+    background-color: #c7c7c7;
+    margin:auto;
+    display: flex;
+  }
+  .introduction .item{
+   
+    width:50%;
+  }
+  .introduction .pic{
+    background-color: #242323;
+  }
+  .introduction .pic img{
+    /* position:absolute;
+    right:0; */
+    width:70%;
+  }
+  .cv{
+    width:100%;
+    
+    background-color:  #c7c7c7;
+    margin-top: 1px;
+    position: relative;
+    text-align: center;
+  }
+  .cv .wrap{
+    width: 100%;
+    height: 100%;
+    margin:auto;
+    display:flex;
+    text-align: center;
+    position: relative;
+  }
+  .cv .wrap .line{
+    border-left: 8px solid gray;
+    display: block;
+    height: 80%;
+    position: absolute;
+    left:49.9%;
+    top:10%;
+  }
+  .cv .wrap .item{ 
+    width: 50%;
+    height: 100%;
+    padding: 0px 20px;
+  }
+  .cv .wrap .left{
+    text-align: right;
+  }
+  
+  .cv .wrap .right{
+    text-align: left;
+  }
+  .cv .wrap .left p{
+    padding: 0 5px;
+    border-right: 8px solid blue;
+  }
+  .cv .wrap .right p{
+    padding: 0 5px;
+    border-left: 8px solid blue;
+  }
+  .cv a{
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 50px;
+    color: white;
+    background-color: black;
+    margin: 30px;
+  }
+  .publication{
+    width:100%;
+    height: 300px;
+     /*這裡可以用固定高度嗎?  */
+    background-color:  #e8e6e6;
+    margin-top: 1px;
+  }
+  .publication .wrap{
+    width: 50%;
+    text-align: center;
+    margin:auto;
+  }
+  .publication .wrap .line{
+    height: 1px;
+    width: 50%;
+    background-color: black;
+    margin:auto;
+  }
+  .publication .wrap p{
+    margin: 20px 0px;
+  }
+  .publication .wrap h1{
+    margin:auto;
+  }
+  .research{
+    width: 100%;
+    display:flex;
+    padding:50px;
+  }
+  .research .item{
+    width:40%;
+    margin:auto;
+  }
+  .research .item .flexslider .slides li{
+    text-align: center;
+  }
+  .research .item .flexslider .slides li h1{
+    text-align: center;
+  }
+  .research .item .flexslider .slides li img{
+      padding: 0 20px;
+  }
+  .research .item .flexslider .slides li .line{
+    height: 1px;
+    width: 50%;
+    background-color: black;
+    margin:auto;
+  }
+  .contact{
+    background-color:  #e8e6e6;
+    margin-top: 1px;
+  }
+  .contact .wrap{
+    text-align: center;
+    margin:auto;
+    
+  }
+  .contact .wrap .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .contact .row{
+    display:flex;
+  }
+  .contact .row .item{
+    background-color: white;
+    padding: 20px 0px ;
+    margin:0px 100px;
+    text-align: center;
+  
+  }
+  .footer{
+    background-color: black;
+    width:100%;
+    display: flex;
+    
+  }
+  .footer .item{
+    width:50%;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer .item p{
+    font-size: 20px;
+    color:white;
+
+  }
+ 
