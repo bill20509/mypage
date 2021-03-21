@@ -79,7 +79,6 @@
   }
   .introduction .item .container .slide .flexslider .slides li{
     text-align: center;
-    
   }
   .introduction .item .container .slide .flexslider .slides li h1{
     margin: auto;
@@ -87,13 +86,18 @@
     font-family: 'Libre Baskerville', serif;
     font-size: 17px;
     width:50%;
+    margin-top:20%;
     border-bottom: 1px solid white;
   }
   .introduction .item .container .slide .flexslider .slides li p{
     color:rgb(232, 230, 230);
     font-size: 18px;
-    
+    margin-top:5%;
+    line-height: 2em;
     font-weight:400;
+  }
+  #myname{
+    font-size:35px;
   }
   .introduction .item .container .slide .link-bar{
     border-top: 0.2px solid white;
@@ -130,6 +134,7 @@
     width:100%;
     height:100%;
   }
+  
   .cv{
     width:100%;
     
@@ -266,7 +271,7 @@
   .contact .wrap{
     text-align: center;
     margin:auto;
-    
+    padding: 50px;
   }
   .contact .wrap .arrow {
     border: solid black;
@@ -279,12 +284,30 @@
   .contact .row{
     display:flex;
   }
-  .contact .row .item{
+  .contact.box{
+    display: flex;
+    
+  }
+  .contact .wrap .item{
     background-color: white;
-    padding: 20px 0px ;
-    margin:0px 100px;
+    width:25%;
+    margin:auto;
+    display:inline-block;
+    
     text-align: center;
-  
+  }
+  .contact .wrap h1{
+    font-family: 'Varela Round', sans-serif;
+    font-size:15px;
+    font-weight:700;
+    color:black;
+  }
+  .contact .wrap .item h2{
+    font-family: 'Varela Round', sans-serif;
+    font-size:14px;
+    font-weight:700;
+    margin-top: 20px;
+    color:rgb(61, 201, 179);
   }
   .contact  .buttons{
     display: flex;
@@ -292,6 +315,21 @@
     margin:auto;
     padding:0;
     /* margin: 50px; */
+  }
+  .contact .wrap .item i{
+    font-size: 30px;
+    margin-top:20px;
+    display: inline-block;
+  }
+  .contact .wrap .item .green-line{
+    width:10%;
+    height:6px;
+    background-color: rgb(61, 201, 179);
+    margin: 20px auto;
+  }
+  .contact .wrap .item p{
+    margin:20px;
+    color:rgb(140, 147, 152);
   }
   .contact  .buttons li{
     display:flex;
