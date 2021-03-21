@@ -1,5 +1,8 @@
-.header{
-    background-image:url(src/background.jpg);
+  *{
+    font-family: 'Open Sans', sans-serif;
+  }
+  .header{
+    background-image:url(/assets/images/background.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -25,26 +28,31 @@
     width: 100%;
     height: 100%;
     display: flex;
+    font-family: 'arial';
     flex-direction: column;
     justify-content: center;
     text-align: center;
   }
-  /* .header .name h1{
+  .header .name h1{
     color: rgb(25, 78, 9);
+    font-size:51px;
+    margin: 0;
+    padding: 0;
   }
-  .header h3{
-    font-size: 14px;
-  } */
+  .header .name h3{
+    margin: 0;
+    padding: 0;
+    font-size:13px;
+  }
   .introduction{
-    
     width:100%;
     background-color: #c7c7c7;
     margin:auto;
     display: flex;
   }
   .introduction .item{
-   
     width:50%;
+
   }
   .introduction .pic{
     background-color: #242323;
@@ -60,35 +68,57 @@
   .introduction .item .container .slide{
       width:70%;
       background-color: #242323;
+      border: 0.2px solid white;
   }
   .introduction .item .container .slide .flexslider{
     width:100%;
-    height: 80%;
+    height: 75%;
     background-color: #242323;
+    background:  #242323;
+    border:0;
+  }
+  .introduction .item .container .slide .flexslider .slides li{
+    text-align: center;
     
   }
+  .introduction .item .container .slide .flexslider .slides li h1{
+    margin: auto;
+    color:white;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 17px;
+    width:50%;
+    border-bottom: 1px solid white;
+  }
+  .introduction .item .container .slide .flexslider .slides li p{
+    color:rgb(232, 230, 230);
+    font-size: 18px;
+    
+    font-weight:400;
+  }
   .introduction .item .container .slide .link-bar{
+    border-top: 0.2px solid white;
     width:100%;
-    height: 20%;
+    height: 25%;
     font-size: 0px;
   }
   .introduction .item .container .slide .link-bar a{
     display:inline-block;
     width:25%;
     height: 100%;
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 3em;
     text-align: center;
     text-decoration: none;
     color:white;
   }
   .introduction .item .container .slide .link-bar .btn1{
-    background-color: purple;
+    background-color: rgb(43,7,77);
   }
   .introduction .item .container .slide .link-bar .btn2{
-    background-color: orangered;
+    background-color: rgb(79,29,14);
   }
   .introduction .item .container .slide .link-bar .btn3{
-    background-color: blue;
+    background-color: rgb(19,25,70);
   }
   .introduction .item .container .slide .link-bar .btn4{
     background-color: black;
@@ -117,7 +147,7 @@
     position: relative;
   }
   .cv .wrap .line{
-    border-left: 8px solid gray;
+    border-left: 6px solid #424242;
     display: block;
     height: 80%;
     position: absolute;
@@ -138,11 +168,11 @@
   }
   .cv .wrap .left p{
     padding: 0 5px;
-    border-right: 8px solid blue;
+    border-right: 10px solid rgb(37,49,141);
   }
   .cv .wrap .right p{
     padding: 0 5px;
-    border-left: 8px solid blue;
+    border-left: 10px solid rgb(37,49,141);
   }
   .cv a{
     display: inline-block;
@@ -161,43 +191,71 @@
     margin-top: 1px;
   }
   .publication .wrap{
-    width: 50%;
+    width: 40%;
     text-align: center;
     margin:auto;
   }
   .publication .wrap .line{
-    height: 1px;
-    width: 50%;
+    height: 3px;
+    width: 35%;
     background-color: black;
-    margin:auto;
+    margin:0.5em auto;
   }
   .publication .wrap p{
     margin: 20px 0px;
+    font-size: 16px;
+    line-height: 2rem;
+    color:rgb(117, 117, 117);
+    margin:30px 0 50px;
+  }
+  .publication .wrap p .name{
+    color:black;
   }
   .publication .wrap h1{
-    margin:auto;
+    font-family: 'Libre Baskerville', serif;
+    font-size:17px;
+    line-height: 1em;
+    padding: 20px 0 0;
+    font-weight:400;
+    margin: auto;
   }
-  .research{
+  .project{
     width: 100%;
     display:flex;
     padding:50px;
   }
-  .research .item{
+  .project .item{
     width:40%;
     margin:auto;
   }
-  .research .item .flexslider .slides li{
+  .project .item .flexslider .slides li{
     text-align: center;
   }
-  .research .item .flexslider .slides li h1{
+  .project .item .flexslider .slides li h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size:17px;
+    font-weight:400;
     text-align: center;
+    width:40%;
+    margin: 40px auto;
+    border-bottom: 3px solid black;
   }
-  .research .item .flexslider .slides li img{
+  .project .item .flexslider .slides li p{
+    font-family: 'Libre Baskerville', serif;
+    font-size:17px;
+    font-weight:400;
+    text-align: center;
+    font-family: 'arial';
+    line-height:36px;
+    color:rgb(117, 117, 117);
+    font-weight:400;
+  }
+  .project .item .flexslider .slides li img{
       padding: 0 20px;
   }
-  .research .item .flexslider .slides li .line{
+  .project .item .flexslider .slides li .line{
     height: 1px;
-    width: 50%;
+    width: 20%;
     background-color: black;
     margin:auto;
   }
@@ -227,6 +285,29 @@
     margin:0px 100px;
     text-align: center;
   
+  }
+  .contact  .buttons{
+    display: flex;
+    width:20%;
+    margin:auto;
+    padding:0;
+    /* margin: 50px; */
+  }
+  .contact  .buttons li{
+    display:flex;
+    margin: 50px auto;
+    text-align: center;
+  }
+  .contact  .buttons li .btns{
+    width: 50px;
+    height: 50px;
+    display:inline-block;
+    text-decoration: none;
+    line-height: 48px;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 50%;
+    color:white;
   }
   .footer{
     background-color: black;

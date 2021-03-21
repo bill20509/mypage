@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- <link  href="reset.css" rel="stylesheet"> -->
-    <link href="style1.css" rel="stylesheet">
-    <link rel="stylesheet" href="flexslider.css" type="text/css">
+    <link href="/assets/styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script src="jquery.flexslider.js"></script>
+    <link rel="stylesheet" href="/assets/styles/flexslider.css" type="text/css">
+    <script src="/assets/scripts/jquery.flexslider.js"></script>
     <script type="text/javascript" charset="utf-8">
+
       $(window).load(function() {
       $('.flexslider').flexslider({
       animation: "slide",
@@ -39,7 +42,7 @@
 
     <div class="introduction">
       <div class="item pic">
-          <img src="src/selfie_edit.jpg" id="selfie">
+          <img src="/assets/images/selfie.jpg" id="selfie">
       </div>
       <div class="item text">
         <div class="container">
@@ -47,18 +50,28 @@
             <div class="flexslider">
               <ul class="slides">
                   <li>
-                    <h1>WSGCN</h1>
-                    <p>WEAKLY-SUPERVISED IMAGE SEMANTIC SEGMENTATION USING<br>GRAPHCONVOLUTIONAL NETWORKS</p>
+                    <h1>Profile</h1>
+                    <p>Hi! I'm Cheng-You Lu.</p>
                   </li>
                   <li>
-                    <h1>LSTM-VRN x MIMO-VRN​</h1>
+                    <h1>Degree</h1>
                     
-                    <p>VIDEO RESCALING NETWORKS WITH JOINT OPTIMIZATION<br>STRATEGIESFOR DOWNSCALING AND UPSCALING</p>
+                    <p>I receieved my B.S. degree in CS Department at Taiwan National Chiao Tung University in 2019.</p>
                   </li>
                   <li>
-                    <h1>SDI</h1>
+                    <h1>Present</h1>
                    
-                    <p>ITRI SMART STORE</p>
+                    <p>I am a research assistant from Multimedia Architecture and Processing Laboratory and advised by Prof. Wen-Hsiao Peng.</p>
+                  </li>
+                  <li>
+                    <h1>Interest I</h1>
+                   
+                    <p>My research covers the field of Computer Vision and Deep Learning.</p>
+                  </li>
+                  <li>
+                    <h1>Interset II</h1>
+                   
+                    <p>I focus on developing neural networks where noisy, limited, or imprecise sources are used .</p>
                   </li>
               </ul>
             </div>
@@ -70,7 +83,7 @@
             </div>
           </div>
           <div class="desk">
-            <img src="src/mordern_desk.jpg" id="modern_desk" alt="modern_desk">
+            <img src="/assets/images/mordern_desk.jpg" id="modern_desk" alt="modern_desk">
           </div>
         </div>
       </div>
@@ -103,33 +116,33 @@
       <div class="wrap">
         <h1>Publication</h1>
         <div class="line"> </div>
-        <p>Y.C.Huang, Y.H.Chen, C.Y.Lu, H.P.Wang, W.H.Peng, and C.C.Huang
-        Video Rescaling Networks with Joint Optimization Strategies for Downscaling and Upscaling
+        <p>Y.C.Huang, Y.H.Chen, <span class="name">C.Y.Lu</span>, H.P.Wang, W.H.Peng, and C.C.Huang<br>
+        Video Rescaling Networks with Joint Optimization Strategies for Downscaling and Upscaling<br>
         IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2021 [Paper] [Code]</p>
        <p>
-          S. Y. Pan, C.Y.Lu, S. P. Lee, and W. H. Peng,
-          Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks
+          S. Y. Pan, <span class="name">C.Y.Lu</span>, S. P. Lee, and W. H. Peng,<br>
+          Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks<br>
           IEEE International Conference on Multimedia and Expo (ICME), 2021 [Paper] 
         </p>
       </div>
     </div>
-    <div class="research">
+    <div class="project">
       <div class="item">
           <div class="flexslider">
             <ul class="slides">
                 <li>
                   <h1>WSGCN</h1>
-                  <img src="src/slide1.png" />
+                  <img src="/assets/images/slides/slide1.png" />
                   <p>WEAKLY-SUPERVISED IMAGE SEMANTIC SEGMENTATION USING<br>GRAPHCONVOLUTIONAL NETWORKS</p>
                 </li>
                 <li>
                   <h1>LSTM-VRN x MIMO-VRN​</h1>
-                  <img src="src/slide2.png" />
+                  <img src="/assets/images/slides/slide2.png" />
                   <p>VIDEO RESCALING NETWORKS WITH JOINT OPTIMIZATION<br>STRATEGIESFOR DOWNSCALING AND UPSCALING</p>
                 </li>
                 <li>
                   <h1>SDI</h1>
-                  <img src="src/slide3.jpg" />
+                  <img src="/assets/images/slides/slide3.jpg" />
                   <p>ITRI SMART STORE</p>
                 </li>
             </ul>
@@ -137,7 +150,7 @@
       </div>
     </div>
 
-    <div class="contact">
+    <!-- <div class="contact">
       <div class="wrap">
         <h1>DROP ME A LINE</h1>
         <p> . . . <i class="arrow"></i> . . . </p>
@@ -159,12 +172,19 @@
               <i class="fa fa-paper-plane"></i>
               <h2>Mail</h2>
               <p>example@gmail.com</p>
-          </div>
-      </div> 
-      <div>
-
+          </div>  
+        </div>
       </div>
-    </div>
+     
+        <ul class="buttons">
+          <li><a href="#" class="btns"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#" class="btns"><i class="fa fa-google"></i></a></li>
+          <li><a href="#" class="btns"><i class="fa fa-github"></i></a></li>
+          <li><a href="#" class="btns"><i class="fa fa-pinterest"></i></a></li>
+        </ul></div>
+  
+      
+    </div> -->
     <div class="footer">
       <div class="item copyright">
         <p>copyright|All rights reserved</p>
