@@ -7,10 +7,7 @@
     background-position: center;
     height: 60vh;
   }
-  .publication .line{
-    height: 3px;
-    background-color: black;
-  }
+
   /* .header nav{
     text-align: center;
     width:80%;
@@ -31,14 +28,15 @@
   }
   .header h1{
     color: rgb(25, 78, 9);
-    font-size:3.1875rem;
+    font-size:3.188rem;
   }
   .header a{
     text-decoration: none;
-    line-height: 50px;
+    line-height: 3.125;
+    color: black;
   }
   .header h3{
-    font-size:0.8125rem;
+    font-size: 0.813rem;
   }
   .profile{
     background-color:  #c7c7c7;
@@ -49,12 +47,12 @@
   .profile .selfie-bg{
     background-color: #242323;
   }
-  .profile a{
+  .profile .link-box a{
     text-decoration: none;
     color:rgb(232, 230, 230);
-    font-size: 18px;
-    line-height: 3rem;
+    font-size: 1.125rem;
     font-weight:400;
+    
   }
   .profile .slide-box{
     height: 90%;
@@ -63,21 +61,29 @@
   .profile .flexslider{
     height: 80%;
   }
+  .profile .flex-direction-nav a {
+    color:white;
+  }
+  #myname{
+    font-size: 2.2rem;
+  }
   .profile .slides li h1{
     margin: auto;
     color:white;
     font-family: 'Libre Baskerville', serif;
-    font-size: 17px;
+    font-size: 1.063rem;
     width:50%;
     margin-top:20%;
     border-bottom: 1px solid white;
   }
   .profile .slides li p{
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top:5%;
-    line-height: 2em;
+    color:#e8e6e6;
+    line-height: 2rem;
     font-weight:400;
   }
+  
   .profile .slides li{
     color:white;
   }
@@ -97,7 +103,7 @@
     background-color: black;
   }
   @media  screen and (max-width:767px){
-    .cv > .row{
+    .cv > .left-bord{
       border-left: 6px solid #424242;
     }
     .cv p{
@@ -123,6 +129,82 @@
       
   }
   
+  
+  .publication{
+    font-size: 0.875rem;
+    background-color:  #e8e6e6;
+  }
+  .publication .line{
+    height: 3px;
+    width:30%;
+    background-color: black;
+  }
+  .publication p{
+    font-size: 1rem;
+    line-height: 1rem;
+    color:rgb(117, 117, 117);
+  }
+  .publication p .name{
+    color:black;
+  }
+  .publication h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    line-height: 1em;
+    font-weight:400;
+  }
+  
+  .project .flexslider{
+    background-color: white;
+  }
+  .project h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    font-weight:400;
+    text-align: center;
+    width:50%;
+    margin: auto;
+    border-bottom: 3px solid black;
+  }
+  .project p{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+    font-weight:400;
+    text-align: center;
+    font-family: 'arial';
+    line-height:36px;
+    color:rgb(117, 117, 117);
+    font-weight:400;
+  }
+  .contact{
+    font-size: 0.875rem;
+    background-color: #f3f5f8;
+    /* border-top: 2px solid blue; */
+  }
+  .contact i{
+    font-size: 1.25rem;
+  }
+  .contact .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .contact .info{
+    font-family: 'Varela Round', sans-serif;
+    font-size:14px;
+    font-weight:700;
+    margin-top: 20px;
+    color:rgb(61, 201, 179);
+  }
+  .contact p{
+    font-family: 'Varela Round', sans-serif;
+    font-size:15px;
+    font-weight:700;
+    color:black;
+  }
   .contact .btn{
     width: 40px;
     height: 40px;
@@ -136,39 +218,6 @@
     width:10%;
     height:6px;
     background-color: rgb(61, 201, 179);
-  }
-  .publication{
-    font-size: 14px;
-    background-color:  #e8e6e6;
-  }
-  .project .flexslider{
-    background-color: white;
-  }
-  .project h1{
-    font-family: 'Libre Baskerville', serif;
-    font-size:17px;
-    font-weight:400;
-    text-align: center;
-    width:50%;
-    margin: auto;
-    border-bottom: 3px solid black;
-  }
-  .project p{
-    font-family: 'Libre Baskerville', serif;
-    font-size:17px;
-    font-weight:400;
-    text-align: center;
-    font-family: 'arial';
-    line-height:36px;
-    color:rgb(117, 117, 117);
-    font-weight:400;
-  }
-  .contact{
-    font-size: 14px;
-    background-color: #f3f5f8;
-  }
-  .contact i{
-    font-size: 20px;
   }
   .footer{
     font-size: 14px;
