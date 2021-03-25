@@ -5,7 +5,7 @@
     background-image:url(/assets/images/background.jpg);
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 60vh;
   }
   .publication .line{
     height: 3px;
@@ -32,11 +32,97 @@
   .header h1{
     color: rgb(25, 78, 9);
     font-size:3.1875rem;
-   
+  }
+  .header a{
+    text-decoration: none;
+    line-height: 50px;
   }
   .header h3{
     font-size:0.8125rem;
   }
+  .profile{
+    background-color:  #c7c7c7;
+  }
+  .cv{
+    background-color:  #c7c7c7;
+  }
+  .profile .selfie-bg{
+    background-color: #242323;
+  }
+  .profile a{
+    text-decoration: none;
+    color:rgb(232, 230, 230);
+    font-size: 18px;
+    line-height: 3rem;
+    font-weight:400;
+  }
+  .profile .slide-box{
+    height: 90%;
+    background-color: #242323;
+  }
+  .profile .flexslider{
+    height: 80%;
+  }
+  .profile .slides li h1{
+    margin: auto;
+    color:white;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 17px;
+    width:50%;
+    margin-top:20%;
+    border-bottom: 1px solid white;
+  }
+  .profile .slides li p{
+    font-size: 18px;
+    margin-top:5%;
+    line-height: 2em;
+    font-weight:400;
+  }
+  .profile .slides li{
+    color:white;
+  }
+  .profile .link-box{
+    height: 10%;
+  }
+  .profile .btn1{
+    background-color: rgb(43,7,77);
+  }
+  .profile .btn2{
+    background-color: rgb(79,29,14);
+  }
+  .profile .btn3{
+    background-color: rgb(19,25,70);
+  }
+  .profile .btn4{
+    background-color: black;
+  }
+  @media  screen and (max-width:767px){
+    .cv > .row{
+      border-left: 6px solid #424242;
+    }
+    .cv p{
+      border-left: 10px solid rgb(37,49,141);
+    }
+  }
+  @media  screen and (min-width:768px){
+      .cv .cv-item{
+        height:100px;
+      }
+      .cv .right-box{
+        border-left: 6px solid #424242;
+      }
+      .cv .left-text{
+        text-align: right;
+      }
+      .cv .right-text{
+        border-left: 10px solid rgb(37,49,141);
+      }
+      .cv .left-text{
+        border-right: 10px solid rgb(37,49,141);
+      }
+      
+  }
+  
   .contact .btn{
     width: 40px;
     height: 40px;
@@ -53,9 +139,33 @@
   }
   .publication{
     font-size: 14px;
+    background-color:  #e8e6e6;
+  }
+  .project .flexslider{
+    background-color: white;
+  }
+  .project h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size:17px;
+    font-weight:400;
+    text-align: center;
+    width:50%;
+    margin: auto;
+    border-bottom: 3px solid black;
+  }
+  .project p{
+    font-family: 'Libre Baskerville', serif;
+    font-size:17px;
+    font-weight:400;
+    text-align: center;
+    font-family: 'arial';
+    line-height:36px;
+    color:rgb(117, 117, 117);
+    font-weight:400;
   }
   .contact{
     font-size: 14px;
+    background-color: #f3f5f8;
   }
   .contact i{
     font-size: 20px;
@@ -64,6 +174,13 @@
     font-size: 14px;
     padding: 40px;
     line-height: 50px;
+    background-color:#242830;
+  }
+  .copyright p{
+    color: #a1a9b0;
+  }
+  .motto p{
+    color:white;
   }
   /* .contact .buttons{
     display: flex;
