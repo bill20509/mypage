@@ -33,23 +33,23 @@
   <div class="header container-fluid mx-0">
     <div class="row justify-content-center bg-white w-75 mx-auto">
       <div class="col-12 col-md-2 text-center">
-        <a href="#">Home</a>
+        <button onclick="scrollWin(0,0)">Home</button>
       </div>
       <div class="col-12 col-md-2 text-center">
-        <a href="#">Profile</a>
+        <button onclick="scrollWin(0,550)">Profile</button>
       </div>
       <div class="col-12 col-md-2 text-center">
-        <a href="#">Publication</a>
+        <button onclick="scrollWin(0,1500)">Publication</button>
       </div>
       <div class="col-12 col-md-2 text-center">
-        <a href="#">Project</a>
+        <button onclick="scrollWin(0,1800)">Project</button>
       </div>
       <div class="col-12 col-md-2 text-center">
-        <a href="#">Contact</a>
+        <button onclick="scrollWin(0,2300)">Contact</button>
       </div>
     </div>
     <div class="row justify-content-center align-items-center h-50">
-      <div class="col-10 col-md-8 ">
+      <div class="col-12 col-md-8 ">
         <div class="text">
           <h1 class="text-center">CHENG-YOU LU</h1>
           <h3 class="text-center">Computer Vision X Machine Learning</h3>
@@ -58,77 +58,74 @@
     </div>
   </div>
 
-  <div class="profile container-fluid ps-0">
+  <div class="profile container-fluid ps-md-0">
     <div class="row g-0 justify-content-center">
-      <div class="col-lg-1 selfie-bg"></div>
-      <div class="col-12 col-md-6 col-lg-5 selfie">
-        <img src="/assets/images/selfie.jpg" class="w-100 h-100">
+      <div class="d-flex col-12 col-md-6 justify-content-end selfie-bg">
+        <img src="/assets/images/selfie.jpg" class="img-fluid">
       </div>
       <div class="col-12 col-md-6">
         <div class="row h-100 justify-content-center">
-          <div class="col-9 col-md-8">
+          <div class="col-12 col-md-8">
             <div class="row h-100">
               <div class="col-12 slide-box">
                 <div class="flexslider">
                   <ul class="slides text-center align-items-center h-100">
                     <li>          
                       <h1>Profile</h1>
-                      <p id="myname">Hi! I'm Cheng-You Lu.</p>
+                      <p class="myname">Hi! I'm Cheng-You Lu.</p>
                     </li>
                     <li>
                       <h1>Degree</h1>
-                      <p>I receieved my B.S. degree in CS Department at<br>Taiwan National Chiao Tung University in 2019.
+                      <p class="desc">I receieved my B.S. degree in CS Department at<br>Taiwan National Chiao Tung University in 2019.
                       </p>
                     </li>
                     <li>
                       <h1>Present</h1>
     
-                      <p>I am a research assistant from Multimedia <br>Architecture and Processing Laboratory and advised
+                      <p class="desc">I am a research assistant from Multimedia <br>Architecture and Processing Laboratory and advised
                         <br>by Prof. Wen-Hsiao Peng.
                       </p>
                     </li>
                     <li>
                       <h1>Interest I</h1>
     
-                      <p>My research covers the field of Computer Vision and <br>Deep Learning.</p>
+                      <p class="desc">My research covers the field of Computer Vision and <br>Deep Learning.</p>
                     </li>
                     <li>
                       <h1>Interset II</h1>
     
-                      <p>I focus on developing neural networks where noisy,<br> limited, or imprecise sources are used .</p>
+                      <p class="desc">I focus on developing neural networks where noisy,<br> limited, or imprecise sources are used .</p>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="col-12 link-box">
                 <div class="row text-center h-100">
-                  <div class="col-3 btn1">
+                  <div class="col-3 btn1 buttons">
                     <a href="#">CV</a>
                   </div>
-                  <div class="col-3 btn2 p-0">
+                  <div class="col-3 btn2 buttons">
                     <a href="#">Google Scholar</a>
                   </div>
-                  <div class="col-3 btn3">
+                  <div class="col-3 buttons btn3">
                     <a href="#">Linkedin</a>
                   </div>
-                  <div class="col-3 btn4">
+                  <div class="col-3 buttons btn4">
                     <a href="#">Github</a>
                   </div>
                 </div>
               </div>
-            </div>
-            
+            </div>       
           </div>
-          <div class="col-3 col-md-2 p-0">
-            <img src="/assets/images/mordern_desk.jpg" class="w-100 h-100" alt="modern_desk">
+          <div class="col-0 col-md-2 p-0 desk">
+            <img src="/assets/images/modern_desk.jpg" class="w-100 h-100" alt="modern_desk">
           </div>
         </div>
       </div>
     </div>
-   
   </div>
   <div class="cv container-fluid pb-4">
-    <div class="row m-1 p-2 p-md-5 left-bord">
+    <div class="row p-2 p-md-5 left-bord">
       <div class="col-12 col-md-6 px-4">
         <div class="row h-100 align-items-around">
           <div class="col-0 col-md-12 cv-item"></div>
@@ -164,7 +161,7 @@
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-2 col-md-1 text-center">
+      <div class="col-3 col-md-1 text-center">
         <a class="btn btn-dark w-100" href="#" role="button">CV</a>
       </div>
     </div>
@@ -217,8 +214,8 @@
     <div class="container py-5">
       <div class="row justify-content-center text-center">
         <div class="col-12">
-          <p>DROP ME A LINE</p>
-          <p>. . . . . . . . . .&nbsp&nbsp&nbsp&nbsp&nbsp<i class="arrow"></i>&nbsp&nbsp&nbsp&nbsp&nbsp. . . . . . . . . .</p>
+          <p>CONTACTS</p>
+          <img src="/assets/images/line.png">
         </div>
       </div>
       <div class="row justify-content-center">
@@ -270,7 +267,18 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+  </script>
+  <script>
+    function scrollWin(x, y) {
+      window.scrollTo({
+        top:y,
+        left:x,
+        behavior:"smooth"
+      });
+    }
+  </script>
+  
 </body>
 
 </html>
