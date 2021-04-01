@@ -263,9 +263,12 @@
 
 .navigator-link {
   text-decoration: none;
+  display: inline-block;
   color: black;
+  transition: all .3s;
 }
 
 .navigator-link:hover {
   color: black;
+  transform: scale(1.1);
 }
