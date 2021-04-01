@@ -229,19 +229,17 @@
   font-weight:700;
   color:black;
 }
-.contact .btn{
+.contact .link{
+  display: inline-block;
   width: 40px;
   height: 40px;
   font-size: 20px;
+  line-height: 40px;
   background-color: black;
-  border-radius: 50%;
-  /* text-align: center; */
   color:white;
-  display:flex;
-  align-items: center;
-}
-.contact .fa{
+  border-radius: 50%;
   text-align: center;
+  text-decoration: none;
 }
 .green-line{
   width:10%;
@@ -250,15 +248,11 @@
 }
 .footer{
   font-size: 14px;
-  padding: 40px;
-  line-height: 50px;
+  padding: 20px;
   background-color:#242830;
 }
-.copyright p{
+.copyright{
   color: #a1a9b0;
-}
-.motto p{
-  color:white;
 }
 
 .navigator-link {
