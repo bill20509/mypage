@@ -5,7 +5,7 @@
   background-image:url('../images/background.jpg');
   background-size: cover;
   background-position: center;
-  height: 60vh;
+  height: 100vh;
 }
 .header .text{
   font-family: 'arial';
@@ -14,7 +14,7 @@
   color: rgb(25, 78, 9);
   font-size:3.188rem;
 }
-@media  screen and (max-width:767px){
+@media screen and (max-width:767px){
   .header h1{
     color: rgb(25, 78, 9);
     font-size:3rem;
@@ -265,4 +265,9 @@
 .navigator-link:hover {
   color: black;
   transform: scale(1.1);
+}
+
+.project-title-link, .project-title-link:visited, .project-title-link:hover {
+  text-decoration: none;
+  color: black;
 }
