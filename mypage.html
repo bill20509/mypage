@@ -25,6 +25,15 @@
         animation: "slide",
         rtl: true
       });
+      // smooth scroll for tags
+      // use a trick from here: https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+        });
+      });
     });
   </script>
 </head>
@@ -32,20 +41,20 @@
 <body>
   <div class="header container-fluid mx-0">
     <div class="row justify-content-center bg-white w-75 mx-auto">
-      <div class="col-12 col-md-2 text-center">
-        <button onclick="scrollWin(0,0)">Home</button>
+      <div class="col-12 col-md-2 text-center py-2">
+        <a class="navigator-link" href="#home">Home</a>
       </div>
-      <div class="col-12 col-md-2 text-center">
-        <button onclick="scrollWin(0,550)">Profile</button>
+      <div class="col-12 col-md-2 text-center py-2">
+        <a class="navigator-link" href="#profile">Profile</a>
       </div>
-      <div class="col-12 col-md-2 text-center">
-        <button onclick="scrollWin(0,1500)">Publication</button>
+      <div class="col-12 col-md-2 text-center py-2">
+        <a class="navigator-link" href="#publication">Publication</a>
       </div>
-      <div class="col-12 col-md-2 text-center">
-        <button onclick="scrollWin(0,1800)">Project</button>
+      <div class="col-12 col-md-2 text-center py-2">
+        <a class="navigator-link" href="#project">Project</a>
       </div>
-      <div class="col-12 col-md-2 text-center">
-        <button onclick="scrollWin(0,2300)">Contact</button>
+      <div class="col-12 col-md-2 text-center py-2">
+        <a class="navigator-link" href="#contact">Contact</a>
       </div>
     </div>
     <div class="row justify-content-center align-items-center h-50">
@@ -58,7 +67,7 @@
     </div>
   </div>
 
-  <div class="profile container-fluid ps-md-0">
+  <div class="profile container-fluid ps-md-0" id="profile">
     <div class="row g-0 justify-content-center">
       <div class="d-flex col-12 col-md-6 justify-content-end selfie-bg">
         <img src="/assets/images/selfie.jpg" class="img-fluid">
@@ -166,7 +175,7 @@
       </div>
     </div>
   </div>
-  <div class="publication container-fluid py-5">
+  <div class="publication container-fluid py-5" id="publication">
     <div class="row justify-content-center text-center">
       <div class="col-12 col-md-6">
         <h1>Publication</h1>
@@ -184,7 +193,7 @@
   </div>
   
  
-  <div class="project container pt-5">
+  <div class="project container pt-5" id="project">
     <div class="row w-100 justify-content-center">
       <div class="col-12 col-md-6">
         <div class="flexslider">
@@ -210,7 +219,7 @@
     </div>
   </div>
 
-  <div class="contact w-100">
+  <div class="contact w-100" id="contact">
     <div class="container py-5">
       <div class="row justify-content-center text-center">
         <div class="col-12">
@@ -268,15 +277,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous">
-  </script>
-  <script>
-    function scrollWin(x, y) {
-      window.scrollTo({
-        top:y,
-        left:x,
-        behavior:"smooth"
-      });
-    }
   </script>
   
 </body>
