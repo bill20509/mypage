@@ -5,7 +5,7 @@
   background-image:url('../images/background.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 60vh;
 }
 .header .text{
   font-family: 'arial';
@@ -14,7 +14,7 @@
   color: rgb(25, 78, 9);
   font-size:3.188rem;
 }
-@media screen and (max-width:767px){
+@media  screen and (max-width:767px){
   .header h1{
     color: rgb(25, 78, 9);
     font-size:3rem;
@@ -241,10 +241,22 @@
   text-align: center;
   text-decoration: none;
 }
+.contact .arrow{
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
 .green-line{
   width:10%;
   height:6px;
   background-color: rgb(61, 201, 179);
+}
+.contact .b-line{
+  background-color: black;
+  height: 3px;
 }
 .footer{
   font-size: 14px;
@@ -265,9 +277,4 @@
 .navigator-link:hover {
   color: black;
   transform: scale(1.1);
-}
-
-.project-title-link, .project-title-link:visited, .project-title-link:hover {
-  text-decoration: none;
-  color: black;
 }
