@@ -213,8 +213,9 @@
   font-size: 0.875rem;
   background-color: #f3f5f8;
 }
-.contact i{
-  font-size: 1.25rem;
+.contact .b-line{
+  background-color: black;
+  height: 3px;
 }
 .contact .info{
   font-family: 'Varela Round', sans-serif;
